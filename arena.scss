@@ -1,0 +1,159 @@
+/* ==========================================================================
+   ARE.NA THEME
+   | Author: Jordan Egstad
+   | Site: https://egstad.com
+   ========================================================================== */
+
+$line--default        : rgba(255,255,255,0.2);
+$interactive          : rgba(0,0,255,0.7);
+$red                  : rgba(255,0,0,0.6);
+$channel--closed      : rgba(50,10,160,1);
+$channel--private     : rgba(140,0,0,1);
+$channel--public      : rgba(10,110,0,1);
+
+
+
+/* Reset
+  ========================================================================== */
+
+body {
+	background: black;
+    color: white !important;
+}
+
+.Input {
+    background-color: black;
+}
+
+a:hover,
+.inline-link:hover,
+.block-collection--list__column__connect:hover,
+.block-collection--list__column__follow:hover,
+.metadata--container a:hover,
+.metadata--selector__option.is-active {
+    color: $interactive;
+}
+
+/* Header
+   ========================================================================== */
+
+input#layout-header__search__input,
+#layout-header {
+	background-color: black;
+}
+
+// Logo
+.header--icon .logo-icon svg {
+	fill: white;
+}
+
+.Dropdown {
+    background-color: black;
+    border: 1px solid black;
+
+    &:after {
+        border-color: transparent;
+    }
+}
+
+.modalize-dialog,
+.modalize-backdrop {
+    background: rgba(black, 0.6);
+}
+
+.BlockSidebar__header {
+    border-bottom: 1px solid $line--default;
+}
+
+
+/* Feed
+   ========================================================================== */
+
+.feed-group,
+.ChannelBlockGroup__divider {
+	border-top: 1px solid $line--default;
+}
+
+.grid__block--channel .grid__block__inner {
+    border-color: transparent;
+}
+
+.grid__block--channel .grid__block__inner--closed,
+.grid__block--channel .grid__block__overlay--closed {
+    background-color: $channel--closed !important;
+    color: white !important;
+}
+
+.grid__block--channel .grid__block__inner--public,
+.grid__block--channel .grid__block__overlay--public {
+    background-color: $channel--public !important;
+    color: white !important;
+}
+
+.grid__block--channel .grid__block__inner--private,
+.grid__block--channel .grid__block__overlay--private {
+    background-color: $channel--private !important;
+    color: white !important;
+}
+
+/* Channels
+   ========================================================================== */
+.Connection {
+    color: white !important;
+    border-color: transparent !important;
+
+    &[data-visibility='closed'] {
+        background-color: $channel--closed;
+    }
+
+    &[data-visibility='private'] {
+        background-color: $channel--private;
+    }
+
+    &[data-visibility='public'] {
+        background-color: $channel--public;
+    }
+
+    &:hover {
+        color: $interactive;
+        border-color: $interactive;
+        background-color: transparent !important;
+        box-shadow: 0 0 10px 5px $interactive;
+    }
+}
+
+/* Blocks
+   ========================================================================== */
+.BlockSidebar {
+    background-color: black;
+}
+
+/* Grid
+   ========================================================================== */
+
+.grid__block{
+	background-color: transparent;
+}
+
+.grid__block__inner {
+    background: transparent !important;
+	border: 1px solid rgba(0,0,0,.2);
+}
+
+
+/* Profile Page
+   ========================================================================== */
+// Premium badge
+a.premium-badge,
+a.premium-badge .premium-badge__cracker > svg {
+    color: $red;
+    fill: $red;
+}
+
+.metadata__title {
+    border-bottom: 1px solid $line--default;
+}
+
+.channel-filter input.input--wide {
+    background: black;
+}

@@ -1,0 +1,113 @@
+/* ==========================================================================
+   ARE.NA THEME
+   | Author: Jordan Egstad
+   | Site: https://egstad.com
+   ========================================================================== */
+/* Reset
+  ========================================================================== */
+body {
+  background: black;
+  color: white !important; }
+
+.Input {
+  background-color: black; }
+
+a:hover,
+.inline-link:hover,
+.block-collection--list__column__connect:hover,
+.block-collection--list__column__follow:hover,
+.metadata--container a:hover,
+.metadata--selector__option.is-active {
+  color: rgba(0, 0, 255, 0.7); }
+
+/* Header
+   ========================================================================== */
+input#layout-header__search__input,
+#layout-header {
+  background-color: black; }
+
+.header--icon .logo-icon svg {
+  fill: white; }
+
+.Dropdown {
+  background-color: black;
+  border: 1px solid black; }
+  .Dropdown:after {
+    border-color: transparent; }
+
+.modalize-dialog,
+.modalize-backdrop {
+  background: rgba(0, 0, 0, 0.6); }
+
+.BlockSidebar__header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+
+/* Feed
+   ========================================================================== */
+.feed-group,
+.ChannelBlockGroup__divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.2); }
+
+.grid__block--channel .grid__block__inner {
+  border-color: transparent; }
+
+.grid__block--channel .grid__block__inner--closed,
+.grid__block--channel .grid__block__overlay--closed {
+  background-color: #320aa0 !important;
+  color: white !important; }
+
+.grid__block--channel .grid__block__inner--public,
+.grid__block--channel .grid__block__overlay--public {
+  background-color: #0a6e00 !important;
+  color: white !important; }
+
+.grid__block--channel .grid__block__inner--private,
+.grid__block--channel .grid__block__overlay--private {
+  background-color: #8c0000 !important;
+  color: white !important; }
+
+/* Channels
+   ========================================================================== */
+.Connection {
+  color: white !important;
+  border-color: transparent !important; }
+  .Connection[data-visibility='closed'] {
+    background-color: #320aa0; }
+  .Connection[data-visibility='private'] {
+    background-color: #8c0000; }
+  .Connection[data-visibility='public'] {
+    background-color: #0a6e00; }
+  .Connection:hover {
+    color: rgba(0, 0, 255, 0.7);
+    border-color: rgba(0, 0, 255, 0.7);
+    background-color: transparent !important;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.7); }
+
+/* Blocks
+   ========================================================================== */
+.BlockSidebar {
+  background-color: black; }
+
+/* Grid
+   ========================================================================== */
+.grid__block {
+  background-color: transparent; }
+
+.grid__block__inner {
+  background: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+
+/* Profile Page
+   ========================================================================== */
+a.premium-badge,
+a.premium-badge .premium-badge__cracker > svg {
+  color: rgba(255, 0, 0, 0.6);
+  fill: rgba(255, 0, 0, 0.6); }
+
+.metadata__title {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+
+.channel-filter input.input--wide {
+  background: black; }
+
+/*# sourceMappingURL=arena.css.map */
